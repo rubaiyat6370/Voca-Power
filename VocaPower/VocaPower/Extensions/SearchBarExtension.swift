@@ -3,8 +3,8 @@
 //  VocaPower
 //
 //  Created by Rubaiyat Jahan Mumu on 2020-02-17.
-//  Copyright © 2020 Rubaiyat Jahan Mumu. All rights reserved.
-//
+
+//https://stackoverflow.com/a/41745002/3939807
 
 import Foundation
 
@@ -78,12 +78,15 @@ private extension UITextField {
     }
 
     func setClearButton(color: UIColor) {
-        ClearButtonImage.getImage { [weak self] image in
-            guard   let image = image,
-                let button = self?.getClearButton() else { return }
-            button.imageView?.tintColor = color
-            button.setImage(image.withRenderingMode(.alwaysTemplate), for: .normal)
-        }
+        var icon: UIImageView? { return self.rightView as? UIImageView }
+
+        //guard let image = icon?.image else { return }
+
+        guard let button = self.getClearButton() else { return }
+        button.setImage(#imageLiteral(resourceName: "icons8-cancel-24").withRenderingMode(.alwaysTemplate), for: .normal)
+        button.imageView?.tintColor = color
+        button.tintColor = color
+//        }
     }
 
     var placeholderLabel: UILabel? { return value(forKey: "placeholderLabel") as? UILabel }

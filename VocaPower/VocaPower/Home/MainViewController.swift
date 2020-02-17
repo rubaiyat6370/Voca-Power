@@ -37,10 +37,10 @@ class MainViewController: UIViewController {
 
         searchBar.placeholder = "Search words...    "
         searchBar.set(textColor: .black)
-        searchBar.setTextField(color: UIColor.white)
-        searchBar.setPlaceholder(textColor: .black)
-        searchBar.setSearchImage(color: .black)
-        searchBar.setClearButton(color: .red)
+        //searchBar.setTextField(color: UIColor.white)
+        searchBar.setPlaceholder(textColor: .white)
+        searchBar.setSearchImage(color: .white)
+        searchBar.setClearButton(color: .black)
         let leftNavBarButton = UIBarButtonItem(customView:searchBar)
         self.navigationItem.leftBarButtonItem = leftNavBarButton
     }
