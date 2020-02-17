@@ -14,6 +14,7 @@
 		BF7344EE23FA43B9005997A0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BF7344EC23FA43B9005997A0 /* Main.storyboard */; };
 		BF7344F123FA43FC005997A0 /* MainTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7344EF23FA43FC005997A0 /* MainTableViewCell.swift */; };
 		BF7344F223FA43FC005997A0 /* MainTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BF7344F023FA43FC005997A0 /* MainTableViewCell.xib */; };
+		BF7E90F823FB0D1E0024968A /* SearchBarExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E90F723FB0D1E0024968A /* SearchBarExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		BF7344ED23FA43B9005997A0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BF7344EF23FA43FC005997A0 /* MainTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableViewCell.swift; sourceTree = "<group>"; };
 		BF7344F023FA43FC005997A0 /* MainTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainTableViewCell.xib; sourceTree = "<group>"; };
+		BF7E90F723FB0D1E0024968A /* SearchBarExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		BF7344D023FA3C0F005997A0 /* VocaPower */ = {
 			isa = PBXGroup;
 			children = (
+				BF7E90F623FB0CFE0024968A /* Extensions */,
 				BF7344E523FA436A005997A0 /* Home */,
 				BF7344D123FA3C0F005997A0 /* AppDelegate.swift */,
 				BF7344DA23FA3C12005997A0 /* Assets.xcassets */,
@@ -76,6 +79,14 @@
 				BF7344F023FA43FC005997A0 /* MainTableViewCell.xib */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		BF7E90F623FB0CFE0024968A /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E90F723FB0D1E0024968A /* SearchBarExtension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -153,6 +164,7 @@
 				BF7344D223FA3C0F005997A0 /* AppDelegate.swift in Sources */,
 				BF7344F123FA43FC005997A0 /* MainTableViewCell.swift in Sources */,
 				BF7344EA23FA439C005997A0 /* MainViewController.swift in Sources */,
+				BF7E90F823FB0D1E0024968A /* SearchBarExtension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
