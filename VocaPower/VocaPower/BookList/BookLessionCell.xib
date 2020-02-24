@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" rowHeight="116" id="KGk-i7-Jjw" customClass="BookLessionCell" customModule="VocaPower" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="116"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lession 1" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ABX-lc-qFJ">
+                        <rect key="frame" x="15" y="20" width="70" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 of 30 words" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yc2-la-aQZ">
+                        <rect key="frame" x="215" y="20" width="90" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="leading" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Eni-YO-4C3">
+                        <rect key="frame" x="15" y="80" width="138" height="21"/>
+                        <state key="normal" title="Study this lession  &gt;">
+                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="studyLessionPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Lx9-mR-bqb"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HFw-Ox-nCH">
+                        <rect key="frame" x="236" y="80" width="69" height="21"/>
+                        <state key="normal" title="Start Quiz">
+                            <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="startQuizPressed:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="r8b-iO-4PL"/>
+                        </connections>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xLQ-nv-xwc">
+                        <rect key="frame" x="15" y="51" width="290" height="14"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INs-gZ-qHx">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="14"/>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="BQt-ZN-s27"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="0.90844153462441313" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="INs-gZ-qHx" firstAttribute="centerY" secondItem="xLQ-nv-xwc" secondAttribute="centerY" id="0aB-hI-4hZ"/>
+                            <constraint firstItem="INs-gZ-qHx" firstAttribute="height" secondItem="xLQ-nv-xwc" secondAttribute="height" id="7CS-f6-1QL"/>
+                            <constraint firstAttribute="height" constant="14" id="E6T-L3-5tA"/>
+                            <constraint firstItem="INs-gZ-qHx" firstAttribute="top" secondItem="xLQ-nv-xwc" secondAttribute="top" id="jl1-CV-NaJ"/>
+                            <constraint firstItem="INs-gZ-qHx" firstAttribute="leading" secondItem="xLQ-nv-xwc" secondAttribute="leading" id="pks-KO-ifS"/>
+                            <constraint firstAttribute="trailing" secondItem="INs-gZ-qHx" secondAttribute="trailing" priority="999" id="vCV-lQ-Xgt"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstItem="HFw-Ox-nCH" firstAttribute="bottom" secondItem="Eni-YO-4C3" secondAttribute="bottom" id="2NN-fQ-zGs"/>
+                    <constraint firstItem="ABX-lc-qFJ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="5JE-m4-o7i"/>
+                    <constraint firstAttribute="bottom" secondItem="Eni-YO-4C3" secondAttribute="bottom" constant="15" id="Ant-8D-7eB"/>
+                    <constraint firstItem="Eni-YO-4C3" firstAttribute="leading" secondItem="ABX-lc-qFJ" secondAttribute="leading" id="CDZ-6j-YFh"/>
+                    <constraint firstItem="xLQ-nv-xwc" firstAttribute="trailing" secondItem="yc2-la-aQZ" secondAttribute="trailing" id="Dlw-jC-ITv"/>
+                    <constraint firstItem="HFw-Ox-nCH" firstAttribute="top" secondItem="Eni-YO-4C3" secondAttribute="top" id="Nwd-oV-pyb"/>
+                    <constraint firstItem="xLQ-nv-xwc" firstAttribute="leading" secondItem="ABX-lc-qFJ" secondAttribute="leading" id="aoz-bZ-ff5"/>
+                    <constraint firstItem="ABX-lc-qFJ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="15" id="bJ4-G4-GIR"/>
+                    <constraint firstItem="HFw-Ox-nCH" firstAttribute="trailing" secondItem="xLQ-nv-xwc" secondAttribute="trailing" id="eIN-sN-DME"/>
+                    <constraint firstItem="xLQ-nv-xwc" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="lqg-UN-JAQ"/>
+                    <constraint firstAttribute="trailing" secondItem="yc2-la-aQZ" secondAttribute="trailing" constant="15" id="oEe-Nk-30f"/>
+                    <constraint firstItem="Eni-YO-4C3" firstAttribute="top" secondItem="xLQ-nv-xwc" secondAttribute="bottom" constant="15" id="pyn-a1-aVc"/>
+                    <constraint firstItem="HFw-Ox-nCH" firstAttribute="leading" secondItem="Eni-YO-4C3" secondAttribute="trailing" constant="83" id="yu3-Wt-aMU"/>
+                    <constraint firstItem="yc2-la-aQZ" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="20" id="zr2-rE-AEz"/>
+                </constraints>
+            </tableViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="lessionNoLabel" destination="ABX-lc-qFJ" id="gGR-yA-Plm"/>
+                <outlet property="progressColorView" destination="INs-gZ-qHx" id="tVZ-dE-LFx"/>
+                <outlet property="progressView" destination="xLQ-nv-xwc" id="yZY-fc-bHZ"/>
+                <outlet property="wordCountLabel" destination="yc2-la-aQZ" id="LL5-SW-ZaP"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="96.428571428571431"/>
+        </tableViewCell>
+    </objects>
+</document>

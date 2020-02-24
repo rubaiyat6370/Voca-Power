@@ -24,7 +24,7 @@
                                 <rect key="frame" x="0.0" y="50" width="304" height="35"/>
                                 <color key="backgroundColor" red="0.93333333333333335" green="0.93333333333333335" blue="0.93333333333333335" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="35" id="2uE-wf-K4n"/>
+                                    <constraint firstAttribute="height" constant="35" id="2uE-wf-K4n" customClass="HeightConstraint" customModule="VocaPower" customModuleProvider="target"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <nil key="textColor"/>
@@ -33,7 +33,7 @@
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8rZ-Sh-SJR">
                                 <rect key="frame" x="15" y="0.0" width="289" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="lhm-27-EUv"/>
+                                    <constraint firstAttribute="height" priority="999" constant="50" id="lhm-27-EUv" customClass="HeightConstraint" customModule="VocaPower" customModuleProvider="target"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -44,8 +44,9 @@
                         <constraints>
                             <constraint firstItem="x2M-0A-GAb" firstAttribute="top" secondItem="8rZ-Sh-SJR" secondAttribute="bottom" id="BjU-pD-PsZ"/>
                             <constraint firstItem="8rZ-Sh-SJR" firstAttribute="top" secondItem="GN4-2U-jF5" secondAttribute="top" id="EoS-mO-Osi"/>
-                            <constraint firstItem="8rZ-Sh-SJR" firstAttribute="leading" secondItem="GN4-2U-jF5" secondAttribute="leading" constant="15" id="LIl-tk-xKK"/>
+                            <constraint firstItem="8rZ-Sh-SJR" firstAttribute="leading" secondItem="GN4-2U-jF5" secondAttribute="leading" constant="15" id="LIl-tk-xKK" customClass="WidthConstraint" customModule="VocaPower" customModuleProvider="target"/>
                             <constraint firstAttribute="bottom" secondItem="x2M-0A-GAb" secondAttribute="bottom" id="LPT-N1-q5Y"/>
+                            <constraint firstAttribute="height" priority="999" constant="85" id="UPh-Yp-xkY" customClass="HeightConstraint" customModule="VocaPower" customModuleProvider="target"/>
                             <constraint firstAttribute="trailing" secondItem="8rZ-Sh-SJR" secondAttribute="trailing" id="Ynb-tU-4zx"/>
                             <constraint firstAttribute="trailing" secondItem="x2M-0A-GAb" secondAttribute="trailing" id="b4t-3a-DTL"/>
                             <constraint firstItem="x2M-0A-GAb" firstAttribute="leading" secondItem="GN4-2U-jF5" secondAttribute="leading" id="dUt-d4-pSZ"/>
@@ -54,10 +55,9 @@
                 </subviews>
                 <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                 <constraints>
-                    <constraint firstItem="GN4-2U-jF5" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="UQe-NN-u4X"/>
-                    <constraint firstAttribute="trailing" secondItem="GN4-2U-jF5" secondAttribute="trailing" constant="8" id="bbo-5m-4ZO"/>
+                    <constraint firstAttribute="trailing" secondItem="GN4-2U-jF5" secondAttribute="trailing" constant="8" id="bbo-5m-4ZO" customClass="WidthConstraint" customModule="VocaPower" customModuleProvider="target"/>
                     <constraint firstItem="GN4-2U-jF5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="pHG-VV-jnQ"/>
-                    <constraint firstItem="GN4-2U-jF5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="uIM-hm-Af6"/>
+                    <constraint firstItem="GN4-2U-jF5" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="uIM-hm-Af6" customClass="WidthConstraint" customModule="VocaPower" customModuleProvider="target"/>
                     <constraint firstAttribute="bottom" secondItem="GN4-2U-jF5" secondAttribute="bottom" constant="8" id="vIS-vW-Euv"/>
                 </constraints>
             </tableViewCellContentView>

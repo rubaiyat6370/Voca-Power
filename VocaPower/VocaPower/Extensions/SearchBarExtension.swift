@@ -80,13 +80,11 @@ private extension UITextField {
     func setClearButton(color: UIColor) {
         var icon: UIImageView? { return self.rightView as? UIImageView }
 
-        //guard let image = icon?.image else { return }
-
         guard let button = self.getClearButton() else { return }
-        button.setImage(#imageLiteral(resourceName: "icons8-cancel-24").withRenderingMode(.alwaysTemplate), for: .normal)
+        button.setImage(#imageLiteral(resourceName: "icons8-cancel-24").withRenderingMode(.alwaysTemplate), for: .normal) 
         button.imageView?.tintColor = color
         button.tintColor = color
-//        }
+
     }
 
     var placeholderLabel: UILabel? { return value(forKey: "placeholderLabel") as? UILabel }

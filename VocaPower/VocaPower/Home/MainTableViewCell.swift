@@ -16,6 +16,7 @@ class MainTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        layer.masksToBounds = false // shadow radius
     }
     
 }

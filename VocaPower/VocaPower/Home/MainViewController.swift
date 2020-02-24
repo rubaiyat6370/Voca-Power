@@ -25,19 +25,20 @@ class MainViewController: UIViewController {
         //title = "Main"
         setupTableView()
         setupSearchbar()
-        navigationController?.navigationBar.barTintColor = UIColor(red: 88.0/255.0, green: 86.0/255.0, blue: 214.0/255.0, alpha: 1)
+        navigationController?.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         self.view.backgroundColor = UIColor(red: 88.0/255.0, green: 86.0/255.0, blue: 214.0/255.0, alpha: 1)
     }
 
     func setupSearchbar() {
 
 
-        searchBar.searchBarStyle = .default
+        searchBar.searchBarStyle = .minimal
         //view.addSubview(searchBar)
 
         searchBar.placeholder = "Search words...    "
+
         searchBar.set(textColor: .black)
-        //searchBar.setTextField(color: UIColor.white)
+        searchBar.setTextField(color: UIColor.clear)
         searchBar.setPlaceholder(textColor: .white)
         searchBar.setSearchImage(color: .white)
         searchBar.setClearButton(color: .black)
@@ -57,6 +58,10 @@ class MainViewController: UIViewController {
 
 
 extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc  = BookContentViewController(nibName: "BookContentViewController", bundle: nil)
+        self.navigationController?.pushViewController(vc, animated: true)
+    }
 
 }
 
@@ -67,6 +72,11 @@ extension MainViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MainCell") as! MainTableViewCell
+        cell.selectionStyle = .none
+        ///
+
+
+        ////
         cell.TextLabel.text = data[indexPath.row].text
         cell.headerLabel.text = data[indexPath.row].header
         return cell
